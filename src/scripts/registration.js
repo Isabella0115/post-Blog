@@ -4,8 +4,8 @@ import { api } from "./apis/api.js";
 const buildHeader = () => {
     return UI.createElement('div', { class: 'container-root' },
         UI.createElement("header", { class: "header" },
-            buildNavButton("/home.html", "Home"),
-            buildNavButton("/index.html", "Login")
+            buildNavButton("./home.html", "Home"),
+            buildNavButton("./index.html", "Login")
         )
     );
 };
@@ -101,7 +101,7 @@ const registerUser = async (newUser) => {
         const response = await api.auth.register(newUser);
         if (response && response.id) {
             console.log("User registered successfully!");
-            window.location.assign("/index.html");
+            window.location.assign("./index.html");
         } else {
             alert("Something is wrong, please check your details");
         }

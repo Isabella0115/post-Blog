@@ -6,7 +6,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const currentPostId = urlParams.get("postId");
 
 function renderPostHeader() {
-    const homeButton = UI.createElement("a", { href: "/home.html", class: "btn" }, "Home");
+    const homeButton = UI.createElement("a", { href: "./home.html", class: "btn" }, "Home");
     return UI.createElement('div', { class: 'container-root' }, [
         UI.createElement("header", { class: "header" },
             UI.createElement("h1", { class: "heading" }, "Create Post"),
@@ -110,10 +110,10 @@ async function savePost(post) {
             response = await api.post.create(newPost);
             console.log("Post created successfully");
         }
-        window.location.assign("/home.html");
+        window.location.assign("./home.html");
     } catch (error) {
         console.log("Error updating/creating post:", error);
-        window.location.assign("/home.html");
+        window.location.assign("./home.html");
     }
 }
 

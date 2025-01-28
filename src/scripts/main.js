@@ -5,7 +5,7 @@ import ValidationError from './utils/error.js';
 
 function buildLoginHeader() {
     return UI.createElement("header",{ class: "header" },
-        UI.createElement("a",{ href: "/home.html", class: "btn" },"Home")
+        UI.createElement("a",{ href: "./home.html", class: "btn" },"Home")
     );
 }
 
@@ -43,7 +43,7 @@ function setupLoginPage() {
         .getElementById("signin-button")
         .addEventListener("click", (event) => {
             event.preventDefault();
-            window.location.href = "/registration.html";
+            window.location.href = "./registration.html";
         });
 }
 
@@ -81,7 +81,7 @@ async function handleLogin() {
                     localStorage.removeItem("userPassword");
                 }
 
-                window.location.assign("/home.html");
+                window.location.assign("./home.html");
             } else {
                 alert("The email or password you entered is incorrect.");
             }

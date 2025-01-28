@@ -6,12 +6,12 @@ import { Storage } from "./utils/storage.js";
 const isUserLogged = isUserLogin();
 
 const createAuthButton = () => {
-    const authButton = UI.createElement("a", { href: "/index.html", class: "btn" }, isUserLogged ? "Log Out" : "Log In");
+    const authButton = UI.createElement("a", { href: "./index.html", class: "btn" }, isUserLogged ? "Log Out" : "Log In");
     authButton.addEventListener("click", () => {
         if (isUserLogged) {
             Storage.clear();
         }
-        window.location.assign("/index.html");
+        window.location.assign("./index.html");
     });
     return authButton;
 };
@@ -22,7 +22,7 @@ const createHeaderSection = () => {
     ]);
 
     const buttons = UI.createElement("div", { class: "buttons" }, [
-        UI.createElement("a", { href: "/registration.html", class: "btn" }, "Sign Up"),
+        UI.createElement("a", { href: "./registration.html", class: "btn" }, "Sign Up"),
         createAuthButton()
     ]);
 
@@ -98,7 +98,7 @@ const createLayout = () => {
     UI.render(container, document.body);
 
     document.getElementById("createPostBtn").addEventListener("click", () => {
-        window.location.assign("/new-post.html");
+        window.location.assign("./new-post.html");
     });
 };
 
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     postsContainer.addEventListener("click", async (event) => {
         if (!isUserLogged) {
-            window.location.assign("/index.html");
+            window.location.assign("./index.html");
             return;
         }
 
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (event.target.classList.contains("edit-btn")) {
             postId = event.target.closest(".post").dataset.id;
-            const postUrl = `/new-post.html?postId=${postId}`;
+            const postUrl = `./new-post.html?postId=${postId}`;
             window.location.assign(postUrl);
         }
     });
