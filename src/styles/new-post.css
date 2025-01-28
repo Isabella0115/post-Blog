@@ -1,0 +1,36 @@
+.container-root {
+    margin: auto;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.form-wrapper {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 3rem;
+}
+
+.post-form{
+    height: 100%;
+}
+
+
+form {
+  width: 800px;
+  height: 500px;
+}
+
+form label {
+  font-size: 1.3rem;
+}
+
+.input {
+  width: 700px;
+  margin-bottom: 1rem;
+}
+
+

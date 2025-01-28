@@ -1,0 +1,68 @@
+  .container-root {
+    display: flex;
+    justify-content: end;
+  }
+
+
+.form-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 500px;
+}
+
+.submit-info .btn {
+  margin-left: 2rem;
+}
+
+.select-box {
+  margin: var(--spacing-xs);
+  border-radius: 0.5rem;
+  padding: var(--spacing-xs);
+}
+
+.country {
+  width: 300px;
+  margin: auto;
+}
+
+.submit-info {
+  margin-top: 1rem;
+}
+
+.gender {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+input::placeholder {
+  color: var(--color-placeholder);
+  opacity: 1;
+}
+
+.social-buttons {
+  margin-top: 2rem;
+  
+
+  }
+
+.social-button {
+  width: 3rem;
+  height: 2rem;
+  margin: 0 12px;
+  border: none;
+  background: none;
+
+}
+
+.social-button:hover {
+  text-decoration: underline;
+}
+
+.social-button img {
+  width: 100%;
+  height: 100%;
+}

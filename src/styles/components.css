@@ -1,0 +1,79 @@
+body {
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: var(--color-background);
+  }
+  
+
+  
+  .btn {
+    width: 8rem;
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-xs);
+    margin-top: var(--spacing-xs);
+    margin-right: var(--spacing-md);
+    border-radius: var(--spacing-md);
+    box-shadow: 3px 3px 1rem #bebebe;
+    background: none;
+    color: var(--color-secondary);
+    border: 0.1px solid var(--color-secondary);
+  }
+  
+  .btn:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    border: 1px solid var(--color-secondary);
+  }
+  
+  .input {
+    background: none;
+    border-radius: 1rem;
+    color: var(--color-placeholder);
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-xs);
+    width: 300px;
+    border: 2px solid #8f8f8e;
+  }
+  
+  .input:focus {
+    border-color: var(--color-accent);
+    outline: none;
+  }
+  
+  .heading {
+    color: var(--color-secondary);
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .text {
+    color: var(--color-primary);
+    text-align: center;
+    font-style: italic;
+  }
+  
+  label {
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+  }
+  
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    padding: var(--spacing-xxl);
+    background-color: var(--color-box-background);
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 10px 10px 0.5rem  #bfbfbf;
+    border: 3px solid #bfbfbf;
+  }
+  
+  input::placeholder {
+    color: var(--color-placeholder);
+    opacity: 1;
+  }

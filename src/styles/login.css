@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    justify-content: end;
+}
+
+.input {
+  width: 300px;
+}
+
+input::placeholder {
+  color: var(--color-placeholder);
+  opacity: 1;
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.form-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 500px;
+}
+
+.password-info label{
+    margin-right: 1rem;
+}
+
+.info-btn{
+    color: var(--color-primary);
+}
+
+.info-btn:hover{
+    color: var(--color-secondary);
+}
