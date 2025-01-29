@@ -109,7 +109,6 @@ const displayPosts = async () => {
         posts.forEach(post => {
             postsContainer.prepend(createPostCardItem(post));
         });
-        console.log("Posts successfully retrieved from server");
     } catch (error) {
         console.error("Error retrieving data", error);
     }
@@ -129,7 +128,6 @@ const showAllBloggers = async () => {
             const bloggerCard = createBloggerProfileCard(user);
             bloggerList.appendChild(bloggerCard);
         });
-        console.log("Users successfully retrieved from server");
     } catch (error) {
         console.log("Error retrieving users:", error);
     }
